@@ -30,7 +30,8 @@ app.post("/upload", upload.single("pdf"), async (req, res) => {
     const dataAPI = apiResponse.data;
 
     const data = { "Policy Number" : "01-0002-175",
-                   "Insured Name" : "TWLOHA INC"};
+                   "Insured Name" : "TWLOHA INC",
+                   "Account Number" : "006126963"};
 
     // Loop over the values in the JSON and highlight them in the HTML
     for (const key in data) {
